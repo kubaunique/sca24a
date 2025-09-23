@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCA-24b</title>
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ✅ обернул в main -->
+  <main>
+    <div class="containers">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is <span class="highlight">Alen</span>. I am learning Front-End Development.</p>
+
+        <!-- ✅ Таблица -->
+        <table class="info-table" aria-describedby="about">
+          <caption>My Week 2 Learning </caption>
+          <thead>
+            <tr>
+              <th>Lesson</th>
+              <th>Topic</th>
+              <th>Practice</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Semantic HTML</td><td>Refactor structure with &lt;main&gt;, &lt;section&gt;, &lt;figure&gt;</td></tr>
+            <tr>
+              <td>2</td>
+              <td>CSS Variables & Typography</td>
+              <td>Set color palette, use rem & clamp()</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Flexbox Navigation</td>
+              <td>Align header menu with gap</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+
+        <!-- Фото -->
+        <figure class="123">
+          <img src="images/myphoto.jpg" alt="Portrait">
+          <figcaption>My photo</figcaption>
+        </figure>
+
+        <figure class="123">
+          <video controls class="video-fluid">
+            <source src="media/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>My Video</figcaption>
+        </figure>
+      </section>
+
+      <section id="contact">
+        <h2>Contact to Me</h2>
+        <p>Email: <a href="mailto:example@mail.com">example@mail.com</a></p>
+        <a href="https://alatoo.edu.kg/en/" target="_blank" rel="noopener noreferrer" class="btn">Visit Ala-Too</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My First Website.</p>
+  </footer>
+
+</body>
+</html>
